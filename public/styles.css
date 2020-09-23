@@ -1,0 +1,244 @@
+html{
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    background-color: #a9b998;
+}
+header{
+    height: 131px;
+    border-radius: 0 0 20px 20px;
+    background: rgb(51,102,0);
+    background: linear-gradient(180deg, rgba(51,102,0,1) 75%, rgba(83,166,0,1) 100%);
+}
+header div img{
+    border-radius: 22% 20% 23% 30%;
+}
+header div#header_image{
+    display: flex;
+    justify-content: center;
+    height: 91px;
+    background-image: url("http://www.transylwahnja.eu/img/top_bacground.gif");
+    border-radius: 0 0 50px 50px;
+}
+header div#language_flags{
+    float: right;
+    padding: 5px;
+    margin-right: 15px;
+}
+header ul{
+    display: inline;
+    padding: 0;
+}
+header ul li{
+    list-style-type: none;
+    float: left;
+    padding-left: 10px;
+}
+header div#date_panel{
+    float: left;
+    font-size: 20px;
+    color: white;
+    padding: 8.5px;
+    margin-left: 15px;
+}
+nav{
+    margin-top: 20px;
+}
+nav ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(63, 126, 0, 0.7);
+    border-radius: 20px 20px 20px 20px;
+}
+nav ul li {
+    flex-shrink: 1;
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 20px 20px;
+
+}
+nav ul li:hover, .active {
+    background-color: #407c00;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+}
+@media only screen and (max-width: 700px) {
+    nav ul{
+        height: 15em;
+    }
+    main aside{
+        padding: 0 60px 0 60px;
+    }
+    main aside:after{
+        top: 330px;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+    nav ul{
+        height: 10em;
+    }
+    main aside{
+        padding: 0 80px 0 80px;
+    }
+    main aside:after{
+        top: 250px;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1400px){
+    nav ul{
+        height: 120px;
+    }
+    main aside{
+        padding: 0 100px 0 100px;
+    }
+    main aside:after{
+        top: 210px;
+    }
+}
+@media only screen and (min-width: 1400px){
+    nav ul{
+        height: 5em;
+    }
+    main aside{
+        padding: 0 150px 0 150px;
+    }
+    main aside:after{
+        top: 170px;
+    }
+}
+main{
+    margin-top: 70px;
+}
+main aside{
+    font-size: 20px;
+    text-align: justify;
+}
+main aside:after {
+    content: "";
+    position: absolute;
+    left: 15%;
+    height: 200px;
+    width: 70%;
+    background-image: url(https://svgsilh.com/svg/2154993.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -20;
+}
+main section#main_content h1{
+    font-size: 30px;
+    margin-top: 60px;
+    text-align: center;
+    display: block;
+}
+main section article.newsflash{
+    background-color: #8a947c85;
+    border-radius: 20px;
+    margin: 20px;
+    min-width: 114px;
+}
+main section article a{
+    width: min-content;
+}
+main section article a img{
+    border-radius: 20px;
+    margin: 10px;
+}
+main section article.newsflash{
+    display: flex;
+    flex-direction: column;
+}
+main section article.newsflash time{
+    padding-left: 10px;
+}
+main section article.newsflash h2{
+    margin-top: 0;
+    padding: 0 10px 0 10px;
+}
+main section article.newsflash p{
+    margin: 0;
+    padding: 0 10px 10px 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+main section.pagination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section.pagination h1{
+    margin: 0;
+}
+main section p{
+    margin-top: 0;
+}
+aside#right_panel section:first-child h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+aside section:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+aside section:first-child div{
+    background-color: #8a947c85;
+    border-radius: 10px;
+    margin: 10px;
+}
+aside section:first-child div h3{
+    padding: 0 10px 0 10px;
+}
+aside section:first-child div p{
+    padding: 0 10px 0 10px;
+}
+aside section:nth-child(2){
+    background-color: #8a947c85;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin-top: 20px;
+}
+aside section:nth-child(2) h2{
+    margin: 0;
+}
+aside section:nth-child(2) div p{
+    margin: 0;
+}
+aside section:nth-child(3){
+    background-color: #8a947c85;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin-top: 10px;
+}
+aside section:nth-child(3) h2{
+    margin: 0;
+}
+aside section:nth-child(3) ul{
+    list-style-type: none;
+    padding: 0;
+}
+footer{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+main h1#notFound{
+    text-align: center;
+}

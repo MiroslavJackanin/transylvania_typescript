@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<%- include("partials/head"); %>
+</head>
+
+<body>
+	<header>
+		<%- include("partials/header"); %>
+	</header>
+
+	<nav>
+		<%- include("partials/nav", menu); %>
+	</nav>
+
+	<main>
+		<%- include("pages/" + page, articles); %>
+	</main>
+	<aside id="right_panel">
+		<%- include("partials/right_panel"); %>
+	</aside>
+
+	<footer>
+		&copy; <a href="http://www.transylwahnja.eu">www.transylwahnja.eu</a>, 2006-2007
+	</footer>
+</body>
+
+</html>
