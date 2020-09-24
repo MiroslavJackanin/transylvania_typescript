@@ -1,3 +1,5 @@
 <ul>
-    <%menu.forEach((entry)=>{%><li><a href="/<%=entry.local%>"><%=entry.label%></a></li><%})%>
+    <% menu.forEach((entry) => { %>
+        <%- linkGenerator(entry, page) %>
+        <% }); %>
 </ul>
